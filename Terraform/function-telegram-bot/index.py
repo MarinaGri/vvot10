@@ -64,7 +64,6 @@ def find(session, name):
     query = f'''
         SELECT * FROM `{table}`
         WHERE `name` = '{name}'
-        LIMIT 10
         '''
 
     query = session.prepare(query)
